@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style-lg.css">
     <link rel="stylesheet" href="css/style-xs.css">
     <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/imagelightbox.css">
+    <link rel="stylesheet" href="css/lightcase.css">
     <link rel="icon" type="xlink/icon" href="images/favicon.png">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -187,60 +187,60 @@
             </div>
 -->
             <div class="col-xs-12">
-                <a href="images/products/0001.jpg" data-imagelightbox="products">
+                <a href="images/products/0001.jpg" data-rel="lightcase:products">
                     <img src="images/products/0001.jpg" alt="">
                 </a>
-                <a href="images/products/0002.jpg" data-imagelightbox="products">
+                <a href="images/products/0002.jpg" data-rel="lightcase:products">
                     <img src="images/products/0002.jpg" alt="">
                 </a>
-                <a href="images/products/0003.jpg" data-imagelightbox="products">
+                <a href="images/products/0003.jpg" data-rel="lightcase:products">
                     <img src="images/products/0003.jpg" alt="">
                 </a>
-                <a href="images/products/0004.jpg" data-imagelightbox="products">
+                <a href="images/products/0004.jpg" data-rel="lightcase:products">
                     <img src="images/products/0004.jpg" alt="">
                 </a>
-                <a href="images/products/0005.jpg" data-imagelightbox="products">
+                <a href="images/products/0005.jpg" data-rel="lightcase:products">
                     <img src="images/products/0005.jpg" alt="">
                 </a>
-                <a href="images/products/0006.jpg" data-imagelightbox="products">
+                <a href="images/products/0006.jpg" data-rel="lightcase:products">
                     <img src="images/products/0006.jpg" alt="">
                 </a>
-                <a href="images/products/0007.jpg" data-imagelightbox="products">
+                <a href="images/products/0007.jpg" data-rel="lightcase:products">
                     <img src="images/products/0007.jpg" alt="">
                 </a>
-                <a href="images/products/0008.jpg" data-imagelightbox="products">
+                <a href="images/products/0008.jpg" data-rel="lightcase:products">
                     <img src="images/products/0008.jpg" alt="">
                 </a>
-                <a href="images/products/0009.jpg" data-imagelightbox="products">
+                <a href="images/products/0009.jpg" data-rel="lightcase:products">
                     <img src="images/products/0009.jpg" alt="">
                 </a>
-                <a href="images/products/0010.jpg" data-imagelightbox="products">
+                <a href="images/products/0010.jpg" data-rel="lightcase:products">
                     <img src="images/products/0010.jpg" alt="">
                 </a>
-                <a href="images/products/0011.jpg" data-imagelightbox="products">
+                <a href="images/products/0011.jpg" data-rel="lightcase:products">
                     <img src="images/products/0011.jpg" alt="">
                 </a>
-                <a href="images/products/0012.jpg" data-imagelightbox="products">
+                <a href="images/products/0012.jpg" data-rel="lightcase:products">
                     <img src="images/products/0012.jpg" alt="">
                 </a>
-                <a href="images/products/0013.jpg" data-imagelightbox="products">
+                <a href="images/products/0013.jpg" data-rel="lightcase:products">
                     <img src="images/products/0013.jpg" alt="">
                 </a>
-                <a href="images/products/0014.jpg" data-imagelightbox="products">
+                <a href="images/products/0014.jpg" data-rel="lightcase:products">
                     <img src="images/products/0014.jpg" alt="">
                 </a>
-                <a href="images/products/0015.jpg" data-imagelightbox="products">
+                <a href="images/products/0015.jpg" data-rel="lightcase:products">
                     <img src="images/products/0015.jpg" alt="">
                 </a>
-                <a href="images/products/0016.jpg" data-imagelightbox="products">
+                <a href="images/products/0016.jpg" data-rel="lightcase:products">
                     <img src="images/products/0016.jpg" alt="">
                 </a>
 <!--                <a href=""></a>-->
 <!--
-                <a href="images/products/0017.jpg" data-imagelightbox="products">
+                <a href="images/products/0017.jpg" data-rel="lightcase:products">
                     <img src="images/products/0017.jpg" alt="">
                 </a>
-                <a href="images/products/0018.jpg" data-imagelightbox="products">
+                <a href="images/products/0018.jpg" data-rel="lightcase:products">
                     <img src="images/products/0018.jpg" alt="">
                 </a>
 -->
@@ -439,7 +439,7 @@
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.localScroll.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/imagelightbox.min.js"></script>
+    <script src="js/lightcase.js"></script>
 <!--    <script src="js/lib/jquery.easing.js"></script>-->
     
     
@@ -470,25 +470,15 @@
         });
     </script>
     
-    <script>
-        $( function()
-        {
-            $( 'a[data-imagelightbox="products"]' ).imageLightbox({                                     
-                activity:       true,                    // bool;            show activity indicator
-                button:         true,                    // bool;            show close button
-                caption:        true,                    // bool;            show captions
-                navigation:     false,                    // bool;            show navigation
-                overlay:        true,                    // bool;            display the lightbox as an overlay
-                selector:       'a[data-imagelightbox]', // string;
-                allowedTypes:   'png|jpg|jpeg||gif',     // string;
-                animationSpeed: 250,                     // integer;
-                preloadNext:    true,                    // bool;            silently preload the next image
-                enableKeyboard: true,                    // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
-                quitOnEnd:      false,                   // bool;            quit after viewing the last image
-                quitOnImgClick: false,                   // bool;            quit when the viewed image is clicked
-                quitOnDocClick: true,                    // bool;            quit when anything but the viewed image is clicked
-                quitOnEscKey:   true,                    // bool;            quit when Esc key is pressed
-                arrows:         true
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('a[data-rel^=lightcase]').lightcase({
+                swipe: true,
+                showSequenceInfo: false,
+                shrinkFactor: 0.80,
+                maxWidth: 1000,
+                maxHeight: 1000,
+                overlayOpacity: .9
             });
         });
     </script>
