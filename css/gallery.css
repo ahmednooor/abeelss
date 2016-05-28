@@ -29,6 +29,46 @@
     padding-top: 12px;
 }
 
+.show {
+    opacity: 1;
+    visibility: visible;
+    display: inherit;
+    transition: all 0.3s ease-in;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: all 0.3s ease-in;
+}
+
+.taglinks {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.taglinks a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: #106ee8;
+    padding: 0 1.5rem;
+    border: 3px solid #106ee8;
+    margin: 2rem;
+    transition: all 0.3s ease-in;
+}
+
+.taglinks a:hover, .taglinks a:active {
+    background: #106ee8;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
 .gallery-container img {
     display: block;
     width: 100%;
@@ -116,6 +156,17 @@
     #gallery {
         padding-top: 10px;
     }
+    .taglinks {
+        text-align: left;
+        margin: 1rem auto;
+    }
+    .taglinks a {
+        display: inline-block;
+        margin: 0.6rem;
+        font-size: 1.4rem;
+        padding: 0 1rem;
+        border: 2px solid #106ee8;
+    }
     .gallery-container a {
         width: calc(50% - 8px);
         height: 45vw;
@@ -155,6 +206,16 @@
     }
     #gallery {
         padding-top: 12px;
+    }
+    .taglinks {
+        margin: 1rem auto;
+    }
+    .taglinks a {
+        display: inline-block;
+        margin: 0.6rem;
+        font-size: 1.6rem;
+        padding: 0 1.2rem;
+        border: 3px solid #106ee8;
     }
     .gallery-container a {
         width: calc(33.3% - 16px);

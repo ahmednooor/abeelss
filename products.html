@@ -181,70 +181,69 @@
         </div>
 -->
         
-        <div class="row gallery-container">
-<!--
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        <div class="row">
+            <div class="col-xs-12 taglinks">
+                <a>All</a>
+                <a data-tags="pillars">Pillars</a>
+                <a data-tags="masterpillars">Master Pillars</a>
+                <a data-tags="accessories">Accessories</a>
+                <a data-tags="pipes">Pipes</a>
             </div>
--->
+        </div>
+        
+        <div class="row gallery-container">
+            
             <div class="col-xs-12">
-                <a href="images/products/0001.jpg" data-rel="lightcase:products">
+                
+                <a href="images/products/0001.jpg" data-rel="lightcase:products" data-tags="pillars">
                     <img src="images/products/0001.jpg" alt="">
                 </a>
-                <a href="images/products/0002.jpg" data-rel="lightcase:products">
+                <a href="images/products/0002.jpg" data-rel="lightcase:products" data-tags="accessories">
                     <img src="images/products/0002.jpg" alt="">
                 </a>
-                <a href="images/products/0003.jpg" data-rel="lightcase:products">
+                <a href="images/products/0003.jpg" data-rel="lightcase:products" data-tags="masterpillars">
                     <img src="images/products/0003.jpg" alt="">
                 </a>
-                <a href="images/products/0004.jpg" data-rel="lightcase:products">
+                <a href="images/products/0004.jpg" data-rel="lightcase:products" data-tags="pipes">
                     <img src="images/products/0004.jpg" alt="">
                 </a>
-                <a href="images/products/0005.jpg" data-rel="lightcase:products">
+                <a href="images/products/0005.jpg" data-rel="lightcase:products" data-tags="pipes">
                     <img src="images/products/0005.jpg" alt="">
                 </a>
-                <a href="images/products/0006.jpg" data-rel="lightcase:products">
+                <a href="images/products/0006.jpg" data-rel="lightcase:products" data-tags="masterpillars">
                     <img src="images/products/0006.jpg" alt="">
                 </a>
-                <a href="images/products/0007.jpg" data-rel="lightcase:products">
+                <a href="images/products/0007.jpg" data-rel="lightcase:products" data-tags="pillars">
                     <img src="images/products/0007.jpg" alt="">
                 </a>
-                <a href="images/products/0008.jpg" data-rel="lightcase:products">
+                <a href="images/products/0008.jpg" data-rel="lightcase:products" data-tags="accessories">
                     <img src="images/products/0008.jpg" alt="">
                 </a>
-                <a href="images/products/0009.jpg" data-rel="lightcase:products">
+                <a href="images/products/0009.jpg" data-rel="lightcase:products" data-tags="pipes">
                     <img src="images/products/0009.jpg" alt="">
                 </a>
-                <a href="images/products/0010.jpg" data-rel="lightcase:products">
+                <a href="images/products/0010.jpg" data-rel="lightcase:products" data-tags="accessories">
                     <img src="images/products/0010.jpg" alt="">
                 </a>
-                <a href="images/products/0011.jpg" data-rel="lightcase:products">
+                <a href="images/products/0011.jpg" data-rel="lightcase:products" data-tags="pipes">
                     <img src="images/products/0011.jpg" alt="">
                 </a>
-                <a href="images/products/0012.jpg" data-rel="lightcase:products">
+                <a href="images/products/0012.jpg" data-rel="lightcase:products" data-tags="accessories">
                     <img src="images/products/0012.jpg" alt="">
                 </a>
-                <a href="images/products/0013.jpg" data-rel="lightcase:products">
+                <a href="images/products/0013.jpg" data-rel="lightcase:products" data-tags="pillars">
                     <img src="images/products/0013.jpg" alt="">
                 </a>
-                <a href="images/products/0014.jpg" data-rel="lightcase:products">
+                <a href="images/products/0014.jpg" data-rel="lightcase:products" data-tags="masterpillars">
                     <img src="images/products/0014.jpg" alt="">
                 </a>
-                <a href="images/products/0015.jpg" data-rel="lightcase:products">
+                <a href="images/products/0015.jpg" data-rel="lightcase:products" data-tags="pillars">
                     <img src="images/products/0015.jpg" alt="">
                 </a>
-                <a href="images/products/0016.jpg" data-rel="lightcase:products">
+                <a href="images/products/0016.jpg" data-rel="lightcase:products" data-tags="masterpillars">
                     <img src="images/products/0016.jpg" alt="">
                 </a>
-<!--                <a href=""></a>-->
-<!--
-                <a href="images/products/0017.jpg" data-rel="lightcase:products">
-                    <img src="images/products/0017.jpg" alt="">
-                </a>
-                <a href="images/products/0018.jpg" data-rel="lightcase:products">
-                    <img src="images/products/0018.jpg" alt="">
-                </a>
--->
-<!--                <a href=""></a>-->
+                
             </div>   
         </div>
     </div>
@@ -290,7 +289,7 @@
     <div class="container-fluid map">
         <div class="row">
 <!--            <div class="col-xs-12">-->
-                <div id='google-map'></div>
+                <div id="google-map"></div>
 <!--            </div>-->
         </div>
         
@@ -343,7 +342,7 @@
     
     
     <!--    Google Map Script-->
-    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAFlfHCeoIkqUbVAcfkBvGFdOe17G4aGzI&sensor=false&extension=.js'></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFlfHCeoIkqUbVAcfkBvGFdOe17G4aGzI&sensor=false&extension=.js"></script> 
     <script> 
         google.maps.event.addDomListener(window, 'load', init);
         var map;
@@ -465,8 +464,10 @@
     </script>
     
     <script>
-        $('.menu-list ul, .landing-page').localScroll({
-           hash: true
+        $(document).ready(function(){
+            $('.menu-list ul, .landing-page').localScroll({
+               hash: true
+            });
         });
     </script>
     
@@ -479,6 +480,47 @@
                 maxWidth: 1000,
                 maxHeight: 1000,
                 overlayOpacity: .9
+            });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            var taglinks = $('.taglinks a[data-tags]');
+            var alltag = $('.taglinks a:first-child');
+            
+            taglinks.on('click', function(){
+                var taglink = $(this),
+                    datavalue = taglink.attr('data-tags'),
+                    imagestohide = $('div.gallery-container .col-xs-12 a[data-tags!='+datavalue+']'),
+                    imagestoshow = $('div.gallery-container .col-xs-12 a[data-tags='+datavalue+']');
+                
+                taglinks.css('background', '#fff').css('color', '#106ee8');
+                    
+                taglink.css('background', '#106ee8').css('color', '#fff');
+                    
+                imagestohide
+                    .addClass('hide')
+                    .removeClass('show')
+                    .removeAttr('data-rel', 'lightcase:catered')
+                    .attr('data-rel', 'lightcase:products');
+                imagestoshow
+                    .addClass('show')
+                    .removeClass('hide')
+                    .removeAttr('data-rel', 'lightcase:products')
+                    .attr('data-rel', 'lightcase:catered');
+            });
+                
+            alltag.on('click', function(){
+                var allimages = $('div.gallery-container .col-xs-12 a');
+                    
+                allimages
+                    .addClass('show')
+                    .removeClass('hide')
+                    .removeAttr('data-rel', 'lightcase:products')
+                    .attr('data-rel', 'lightcase:catered');
+                
+                taglinks.css('background', '#fff').css('color', '#106ee8');
             });
         });
     </script>

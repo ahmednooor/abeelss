@@ -61,14 +61,14 @@ img svg{
     text-decoration: none;
     position: absolute;
     right: 0;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .menu-close:hover {
     text-decoration: none;
     color: #106ee8;
     background-color: #fff;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .menu-list ul {
@@ -82,17 +82,17 @@ img svg{
 .menu-list ul li {
     margin: 0;
     display: block;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .menu-list ul li:hover {
     background-color: #fff;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .menu-list ul li:hover a{
     color: #106ee8;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .menu-list ul li:last-child:hover {
@@ -188,18 +188,18 @@ img svg{
     height: 38px;
     background-color: #fff;
     position: relative;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .menu:hover {
     background-color: #106ee8;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .menu:hover > strong, .menu:hover > svg {
     color: #fff;
     fill: #fff;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 #menuicon, #menuicon:target, #menuicon:focus, #menuicon:active, #menuicon:visited, #menuicon:link {
@@ -350,7 +350,7 @@ img svg{
     right: 15px;
     left: 15px;
     background-color: #106ee8;
-    background-image: url(../images/about.jpg);
+    background-image: url(../images/about-xs.jpg);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
@@ -490,30 +490,15 @@ img svg{
     z-index: 2;
     width: 230px;
     text-align: center;
-    transition: all 0.3s ease-in;
-}
-
-.products-btn svg {
-    display: inline-block;
-    margin: 0 0 0 1.8rem;
-    fill: #106ee8;
-    width: 2.5rem;
-    height: auto;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .products-btn:hover {
     text-decoration: none;
     background-color: #106ee8;
     color: #fff;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
-
-.products-btn:hover > svg {
-    fill: #fff;
-    transition: all 0.3s ease-in;
-}
-
 
 .portfolio-btn {
     display: inline-block;
@@ -530,28 +515,14 @@ img svg{
     z-index: 2;
     width: 240px;
     text-align: center;
-    transition: all 0.3s ease-in;
-}
-
-.portfolio-btn svg {
-    display: inline-block;
-    margin: 0 0 0 1.7rem;
-    fill: #106ee8;
-    width: 2.5rem;
-    height: auto;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .portfolio-btn:hover {
     text-decoration: none;
     background-color: #106ee8;
     color: #fff;
-    transition: all 0.3s ease-in;
-}
-
-.portfolio-btn:hover > svg {
-    fill: #fff;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 .contact {
@@ -665,7 +636,7 @@ form input, form textarea {
     font-weight: 900;
     font-size: 2rem;
     padding-top: 1.4rem;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
     position: absolute;
     right: 0;
 }
@@ -673,7 +644,7 @@ form input, form textarea {
 .send-btn:hover {
     background-color: #106ee8;
     color: #fff;
-    transition: all 0.3s ease-in;
+/*    transition: all 0.3s ease-in;*/
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -714,10 +685,10 @@ form input, form textarea {
     
 @media (min-width: 360px) and (max-width: 991px) {
     .logo-img {
-    width: 225px;
+        width: 225px;
+    }
 }
 
-}
 @media (min-width: 768px) {
   .container {
     width: 750px;

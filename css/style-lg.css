@@ -177,10 +177,8 @@ img svg{
 
 .menu-container {
     position: fixed;
-    top: 30px;
+    top: 31px;
     right: 20px;
-/*    left: 50%;*/
-/*    transform: translateX(-50%);*/
     z-index: 19;
 }
 
@@ -498,27 +496,12 @@ img svg{
     transition: all 0.3s ease-in;
 }
 
-.products-btn svg {
-    display: inline-block;
-    margin: 0 0 0 1.8rem;
-    fill: #106ee8;
-    width: 2.5rem;
-    height: auto;
-    transition: all 0.3s ease-in;
-}
-
 .products-btn:hover {
     text-decoration: none;
     background-color: #106ee8;
     color: #fff;
     transition: all 0.3s ease-in;
 }
-
-.products-btn:hover > svg {
-    fill: #fff;
-    transition: all 0.3s ease-in;
-}
-
 
 .portfolio-btn {
     display: inline-block;
@@ -538,24 +521,10 @@ img svg{
     transition: all 0.3s ease-in;
 }
 
-.portfolio-btn svg {
-    display: inline-block;
-    margin: 0 0 0 1.7rem;
-    fill: #106ee8;
-    width: 2.5rem;
-    height: auto;
-    transition: all 0.3s ease-in;
-}
-
 .portfolio-btn:hover {
     text-decoration: none;
     background-color: #106ee8;
     color: #fff;
-    transition: all 0.3s ease-in;
-}
-
-.portfolio-btn:hover > svg {
-    fill: #fff;
     transition: all 0.3s ease-in;
 }
 
