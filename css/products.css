@@ -1,8 +1,11 @@
 .landing-page {
     background: #106ee8;
-    background-image: url(../images/products.jpg);
+    background-image: url(../images/main/products.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     min-height: 320px;
     height: 70vh;
@@ -15,6 +18,10 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -33,6 +40,9 @@
     opacity: 1;
     visibility: visible;
     display: inherit;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -40,12 +50,15 @@
     opacity: 0;
     visibility: hidden;
     display: none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
 .taglinks {
     text-align: center;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 
 .taglinks a {
@@ -58,14 +71,21 @@
     color: #106ee8;
     padding: 0 1.5rem;
     border: 3px solid #106ee8;
-    margin: 2rem;
+    margin: 1rem 2rem;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
-.taglinks a:hover, .taglinks a:active {
+.taglinks a:hover,
+.taglinks a:active {
     background: #106ee8;
     color: #fff;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -73,43 +93,63 @@
     display: block;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
-    /*    -webkit-filter: grayscale(100%);*/
-    /*    filter: grayscale(100%);*/
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
 
 .gallery-container a {
-    /*    margin: 0;*/
     display: block;
     float: left;
+    width: -webkit-calc(25% - 16px);
+    width: -moz-calc(25% - 16px);
     width: calc(25% - 16px);
     height: 274px;
     margin: 8px;
     overflow: hidden;
-    /*    padding: 4px;*/
     position: relative;
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
     box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
 
 .gallery-container a:hover {
-    /*    background: #106ee8;*/
-    /*    padding: 8px;*/
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
 
 .gallery-container a:hover > img {
-    /*    -webkit-filter: grayscale(0%);*/
-    /*    filter: grayscale(0%);*/
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transform: scale(1.05);
-    /*    transform: scale(0.97);*/
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
 
 .gallery-container a:focus > img {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
     transform: scale(1.03);
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
     transition: all 0s;
 }
 
@@ -117,7 +157,7 @@
     padding-top: 70px;
 }
 
-.navigation-btns div:nth-child(2){
+.navigation-btns div:nth-child(2) {
     margin: 1rem 0;
 }
 
@@ -131,7 +171,12 @@
     margin: 0 8px;
     border: 7px solid #106ee8;
     white-space: pre;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -139,6 +184,9 @@
     text-decoration: none;
     background-color: #106ee8;
     color: #fff;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -168,30 +216,52 @@
         border: 2px solid #106ee8;
     }
     .gallery-container a {
+        width: -webkit-calc(50% - 8px);
+        width: -moz-calc(50% - 8px);
         width: calc(50% - 8px);
         height: 45vw;
         margin: 4px;
     }
     .gallery-container a:hover > img {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
         transform: scale(1);
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
     .gallery-container a:focus > img {
+        -webkit-transform: scale(.99);
+        -moz-transform: scale(.99);
+        -ms-transform: scale(.99);
+        -o-transform: scale(.99);
         transform: scale(.99);
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
     .navigation-btn {
-        font-size: 2.5rem;
-        padding: 1rem;
+        font-size: 2.2rem;
+        padding: 0.8rem;
         margin: 0 6px;
-        border: 7px solid #106ee8;
+        border: 5px solid #106ee8;
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
-
-    .navigation-btn:hover, .navigation-btn:focus {
+    .navigation-btn:hover,
+    .navigation-btn:focus {
         text-decoration: none;
         background-color: #106ee8;
         color: #fff;
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
 }
@@ -218,42 +288,73 @@
         border: 3px solid #106ee8;
     }
     .gallery-container a {
+        width: -webkit-calc(33.3% - 16px);
+        width: -moz-calc(33.3% - 16px);
         width: calc(33.3% - 16px);
         height: 228px;
         margin: 8px;
     }
     .gallery-container a:focus > img {
+        -webkit-transform: scale(.99);
+        -moz-transform: scale(.99);
+        -ms-transform: scale(.99);
+        -o-transform: scale(.99);
         transform: scale(.99);
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
     .gallery-container a:hover > img {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
         transform: scale(1);
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
     .navigation-btn {
         font-size: 2.5rem;
         padding: 1rem;
         margin: 0 8px;
-        border: 7px solid #106ee8;
+        border: 6px solid #106ee8;
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
-
-    .navigation-btn:hover, .navigation-btn:focus {
+    .navigation-btn:hover,
+    .navigation-btn:focus {
         text-decoration: none;
         background-color: #106ee8;
         color: #fff;
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .gallery-container a {
+        width: -webkit-calc(25% - 16px);
+        width: -moz-calc(25% - 16px);
         width: calc(25% - 16px);
         height: 220px;
         margin: 8px;
     }
     .gallery-container a:focus > img {
+        -webkit-transform: scale(.99);
+        -moz-transform: scale(.99);
+        -ms-transform: scale(.99);
+        -o-transform: scale(.99);
         transform: scale(.99);
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
         transition: all 0s;
     }
 }

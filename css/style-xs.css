@@ -6,7 +6,7 @@ html, body {
     width: 100%;
 }
 
-img svg{
+img, svg{
     max-width: 100%;
 }
 
@@ -16,7 +16,7 @@ img svg{
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgba(16,110,232,0.5);
+    background-color: rgba(255,255,255,0.7);
     z-index: 30;
     overflow-y: auto;
     transition: all 0.3s ease-in;
@@ -114,7 +114,7 @@ img svg{
 }
 
 #scrollUp {
-    background-image: url("../images/top.png");
+    background-image: url("../images/main/top.png");
     bottom: 15px;
     right: 15px;
     width: 38px;    /* Width of image */
@@ -129,7 +129,7 @@ img svg{
 
 .landing-page {
     background: #106ee8;
-    background-image: url(../images/landing-page.jpg);
+    background-image: url(../images/main/landing-page.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -338,42 +338,7 @@ img svg{
     fill: #106ee8;
 }
 
-.about-img-container {
-    display: block;
-    height: 220px;
-}
-
-.about-img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 15px;
-    left: 15px;
-    background-color: #106ee8;
-    background-image: url(../images/about-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: cover;
-}
-
-.about-text {
-    color: #106ee8;
-}
-
-.about-text h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    border-left: 5px solid #106ee8;
-    padding-left: 16px;
-}
-
-.about-text p {
-    margin-top: 0;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.services {
+    .services {
     margin-top: 20px;
 }
 
@@ -395,7 +360,7 @@ img svg{
     right: 15px;
     left: 15px;
     background-color: #106ee8;
-    background-image: url(../images/services.jpg);
+    background-image: url(../images/main/services.jpg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -414,6 +379,41 @@ img svg{
 }
 
 .services-text p {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+    
+.about-img-container {
+    display: block;
+    height: 220px;
+}
+
+.about-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    left: 15px;
+    background-color: #106ee8;
+    background-image: url(../images/main/about-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+}
+
+.about-text {
+    color: #106ee8;
+}
+
+.about-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    border-left: 5px solid #106ee8;
+    padding-left: 16px;
+}
+
+.about-text p {
     margin-top: 0;
     font-size: 2rem;
     font-weight: bold;
@@ -454,7 +454,7 @@ img svg{
     right: 15px;
     left: 15px;
     background-color: #106ee8;
-    background-image: url(../images/products.jpg);
+    background-image: url(../images/main/products.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -468,7 +468,7 @@ img svg{
     right: 15px;
     left: 15px;
     background-color: #106ee8;
-    background-image: url(../images/portfolio.jpg);
+    background-image: url(../images/main/portfolio.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -581,12 +581,12 @@ img svg{
 
 .form-bg {
     background-color: #106ee8;
-    background-image: url(../images/form.jpg);
-/*    background-attachment: fixed;*/
+    background-image: url(../images/main/form.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    height: 510px;
+    height: 790px;
     position: relative;
     text-align: center;
 }
@@ -665,10 +665,9 @@ form input, form textarea {
 }    
 
 .footer {
-    background-color: #106ee8;
     text-align: center;
     clear: both;
-    margin-top: 200px;
+    margin-top: 101px;
 }
 
 .copyright h4 {
